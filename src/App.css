@@ -1,38 +1,37 @@
-.App {
-  text-align: center;
+.header {
+  background-color: red;
+  width: 100%;
+  height: 60px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.body {
+  background-color: green;
+  width: 100%;
+  min-height: calc(100vh - 360px);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.footer {
+  background-color: yellow;
+  width: 100%;
+  height: 300px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contactList {
+  width: 30%;
+  min-height: calc(100vh - 360px);
+  background-color: blueviolet;
+  max-height: calc(100vh - 360px);
+  overflow: auto;
+}
+
+.chatContainer {
+  width: 70%;
+  min-height: calc(100vh - 360px);
+  background-color: blue;
+}
+
+.contact-item {
+  height: 40px;
+  border: 1px solid white;
 }

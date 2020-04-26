@@ -1,0 +1,109 @@
+
+$red : rgb(15, 160, 204);
+$bodyColor : rgb(138, 204, 155);
+$footerColor : rgb(122, 253, 247);
+$white : #ffffff;
+$border : rgb(53, 70, 53);
+
+.chat-app {
+
+    .header {
+        background-color: $red;
+        width: 100%;
+        height: 60px;
+    }
+
+    .body {
+
+        background-color: $bodyColor;
+        width: 100%;
+        min-height: calc(100vh - 360px);
+        display: flex;
+
+        .contactList {
+            width: 30%;
+            min-height: calc(100vh - 360px);
+            background-color: $white;
+            max-height: calc(100vh - 360px);
+            overflow: auto;
+
+            .contact-item {
+                height: 40px;
+                border: 1px solid $border;
+                display: flex;
+                justify-content: space-between;
+
+                div {
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        margin-bottom: 18px;
+                    }
+                }
+                
+                img {
+                    margin-top: 12px;
+                }
+            }
+        }
+
+        .chatContainer {
+            width: 70%;
+            
+            .selectedChat {
+                height: 50px;
+            }
+            
+            .chat-body {
+                min-height: calc(100vh - 460px);
+                max-height: calc(100vh - 460px);
+                background-color: $white;
+                display: flex;
+                flex-direction: column;
+                overflow: auto;
+                //width: 96%;
+
+                .chatMessage {
+                    border: 1px solid black;
+                    height: 90px;
+                    width: 50%;
+                    border-radius: 20px;
+                    margin-bottom: 10px;
+                    padding: 6px;
+                }
+
+                .sender {
+                    background-color: #ded2d2;
+                    align-self: flex-end;
+                }
+
+                .reciever {
+                    background-color: $white;
+                }
+            }
+            
+            .reply-container {
+                height: 50px;
+                display: flex;
+
+                input {
+                    height: 42px;
+                    width: 100%;
+                }
+
+                button.sendMessage {
+                    border-radius: 25px;
+                    height: 50px;
+                    width: 50px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        background-color: $footerColor;
+        width: 100%;
+        height: 300px;
+    }
+}
